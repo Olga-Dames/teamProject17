@@ -1,0 +1,124 @@
+.section-about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #84a178;
+}
+
+.about-title_second {
+    margin: 0 auto;
+    margin-bottom: 12px;
+    width: 376px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fcfcfc;
+}
+
+.about-title_main {
+    margin: 0 auto;
+    margin-bottom: 120px;
+    width: 481px;
+
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #FCFCFC;
+}
+
+.about-content {
+    position: relative;
+    margin: 0;
+    display: flex;
+
+}
+
+.about-img {
+    margin: 0;
+    margin-left: 17px;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    -webkit-box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
+    -moz-box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
+    border-radius: 250px;
+
+}
+
+.about-text {
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-bottom: 55px;
+    width: 463px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 194%;
+
+    letter-spacing: 0.04em;
+
+    color: #FCFCFC;
+}
+
+.about-text_first {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.about-text_second {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.about-text_thirt {
+    margin: 0;
+    margin-bottom: 55px;
+}
+
+.about-button {
+    width: 164px;
+    height: 42px;
+    background: #F8D24E;
+    border-radius: 10px;
+    border: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+
+
+    color: #000000;
+
+    &:hover {
+        background: #0A8817;
+    }
+
+    &:focus {
+        background: #0A8817;
+        color: #FCFCFC;
+    }
+}
+
+.about-button_symbol {
+    margin-left: 8px;
+    color: #000000;
+
+    &:focus {
+        background: #FCFCFC;
+    }
+}
