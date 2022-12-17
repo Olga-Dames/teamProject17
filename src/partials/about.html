@@ -1,22 +1,24 @@
-<section class="section-about">
+<section class="section_about">
     <div class="container">
-        <h2 class="about-title_second">tradition and love</h2>
-        <h1 class="about-title_main">how it’s made?</h1>
-        <div class="about-content">
-            <div class="about-img_content">
-                <img class="about-img" alt="Фото">
-                <!-- srcset="img/cow/img_279.jpg 279w"
-                    sizes="(min-width: 1200px) 490px, (min-width: 768px) 330px, (min-width: 480px) 279px"
-                    src="./img/cow/img_490.jpg"  -->
-
-            </div>
-            <div class="about-text">
-                <p class="about-text_first">
+        <h3 class="about_title_second">tradition and love</h3>
+        <h2 class="about_title_main">how it’s made?</h2>
+        <div class="about_content">
+            <img class="about_img" srcset="
+            ./images/about/desktop-cow.jpg 1x,
+            ./images/about/desktop-cow@2x.jpg 2x,
+            ./images/about/tablet-cow.jpg 1x,
+            ./images/about/tablet-cow@2x.jpg 2x,
+            ./images/about/mobile-cow.jpg 1x,
+            ./images/about/mobile-cow@2x.jpg 2x"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vh"
+                src="./images/about/desktop-cow.jpg" alt="Фото" width="490" height="490">
+            <div class="about_text">
+                <p class="about_text_first">
                     Ice is a place where you will become not only a little happier, but also healthier. Health
                     is
                     the main value for us, and we follow it when creating our handmade desserts.
                 </p>
-                <p class="about-text_second">
+                <p class="about_text_second">
                     We use traditional recipes and 100% natural ingredients. Our products are so natural that
                     they
                     can be given to children from the age of three years. Sweets lovers can expect 55 types of
@@ -24,10 +26,14 @@
                     cream, 15 types of coffee
                     and 23 milkshakes.
                 </p>
-                <p class="about-text_thirt">
+                <p class="about_text_thirt">
                     This is enough to choose ice cream and coffee for any mood!
                 </p>
-                <button class="about-button">Read more<span class="about-button_symbol">></span></button>
+                <button class="about_button">Read more
+                    <svg class="about_button_symbol">
+                        <use href="./images/icons.svg#icon-arrow-short"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>

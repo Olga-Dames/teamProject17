@@ -1,105 +1,164 @@
-.section-about {
+.section_about {
     padding-top: 60px;
     padding-bottom: 60px;
-    background: #84a178;
+    background: $solid-bg-color;
+    max-width: 480px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
 }
 
-.about-title_second {
+.about_title_second {
+    width: 210px;
     margin: 0 auto;
     margin-bottom: 12px;
-    width: 376px;
-
-    font-family: "Montserrat";
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
 
     text-align: center;
     text-transform: uppercase;
 
     color: #fcfcfc;
+
+
+    @media screen and (min-width: 768px) {
+        width: auto;
+    }
+
 }
 
-.about-title_main {
+.about_title_main {
+    width: 200px;
     margin: 0 auto;
     margin-bottom: 120px;
-    width: 481px;
-
-    font-family: 'Seymour One';
+    font-family: $secondary-font;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
-    line-height: 45px;
+    line-height: 1.25;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: #FCFCFC;
+
+    @media screen and (min-width: 768px) {
+        width: auto;
+    }
 }
 
-.about-content {
+.about_content {
     position: relative;
     margin: 0;
     display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
 
 }
 
-.about-img {
-    margin: 0;
-    margin-left: 17px;
+.about_img {
+    margin: 0 auto;
+    width: 279px;
+    height: 279px;
     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    -webkit-box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
-    -moz-box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
+    -webkit-box-shadow: 0px -22px 0px 1px rgba(248, 210, 78, 0.7);
+    -moz-box-shadow: 0px -22px 0px 1px rgba(248, 210, 78, 0.7);
     border-radius: 250px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        width: 330px;
+        height: 330px;
+        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+        -webkit-box-shadow: 0px -26px 0px 1px rgba(248, 210, 78, 0.7);
+        -moz-box-shadow: 0px -26px 0px 1px rgba(248, 210, 78, 0.7);
+        border-radius: 250px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 17px;
+        width: 490px;
+        height: 490px;
+        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+        -webkit-box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
+        -moz-box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
+        border-radius: 250px;
+    }
 
 }
 
-.about-text {
-    margin: 0;
-    margin-top: 50px;
-    margin-left: 110px;
-    margin-bottom: 55px;
-    width: 463px;
+.about_text {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 220px;
 
-    font-family: 'Montserrat';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 194%;
 
     letter-spacing: 0.04em;
+    text-align: center;
 
     color: #FCFCFC;
+
+    @media screen and (min-width: 768px) {
+        width: 334px;
+        margin-top: 0;
+        margin-left: 38px;
+        margin-bottom: 44px;
+        text-align: start;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 463px;
+        margin-top: 50px;
+        margin-left: 110px;
+        margin-bottom: 55px;
+    }
 }
 
-.about-text_first {
+.about_text_first {
     margin: 0;
     margin-bottom: 8px;
 }
 
-.about-text_second {
+.about_text_second {
     margin: 0;
     margin-bottom: 8px;
 }
 
-.about-text_thirt {
+.about_text_thirt {
     margin: 0;
     margin-bottom: 55px;
 }
 
-.about-button {
+.about_button {
     width: 164px;
     height: 42px;
-    background: #F8D24E;
+    background: $accent-color;
     border-radius: 10px;
     border: 0;
-    font-family: 'Montserrat';
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
 
 
     color: #000000;
@@ -114,11 +173,13 @@
     }
 }
 
-.about-button_symbol {
-    margin-left: 8px;
-    color: #000000;
+.about_button_symbol {
+    width: 11px;
+    height: 9px;
+    margin-left: 5px;
+    fill: #000000;
 
-    &:focus {
-        background: #FCFCFC;
+    .about_button:focus & {
+        fill: #FCFCFC;
     }
 }
