@@ -1,293 +1,291 @@
 .section_about {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background: $solid-bg-color;
-    max-width: 480px;
-    margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: $solid-bg-color;
+  max-width: 480px;
+  margin: 0 auto;
 
-    @media screen and (min-width: $tablet) {
-        max-width: 768px
-    }
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        max-width: 1200px;
-    }
+  @media screen and (min-width: $tablet) {
+    max-width: 1200px;
+  }
 }
 
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    visibility: visible;
-    transition: 450ms;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+  transition: 450ms;
+  z-index: 999;
 }
 
 .backdrop.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .about_modal_close-but {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 15px;
-    height: 15px;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
 
-    @media screen and (min-width: $tablet) {
-        width: 20px;
-        height: 20px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .about_title_second {
-    width: 210px;
-    margin: 0 auto;
-    margin-bottom: 12px;
-    font-family: $primary-font;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.22;
+  width: 210px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
 
-    text-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 
-    color: #fcfcfc;
+  color: #fcfcfc;
 
-
-    @media screen and (min-width: $tablet) {
-        width: auto;
-    }
-
+  @media screen and (min-width: $tablet) {
+    width: auto;
+  }
 }
 
 .about_title_main {
-    width: 200px;
-    margin: 0 auto;
-    margin-bottom: 120px;
-    font-family: $secondary-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1.25;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 
-    color: #FCFCFC;
+  color: #fcfcfc;
 
-    @media screen and (min-width: $tablet) {
-        width: auto;
-    }
+  @media screen and (min-width: $tablet) {
+    width: auto;
+  }
 }
 
 .about_content {
-    position: relative;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 
-    @media screen and (min-width: $tablet) {
-        flex-direction: row;
-    }
-
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
 }
 
 .about_img {
-    margin: 0 auto;
-    width: 279px;
-    height: 279px;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+  margin: 0 auto;
+  width: 279px;
+  height: 279px;
+  background: linear-gradient(
+    0deg,
+    rgba(248, 210, 78, 0.7),
+    rgba(248, 210, 78, 0.7)
+  );
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+  -webkit-box-shadow: 0px -22px 0px 1px rgba(248, 210, 78, 0.7);
+  -moz-box-shadow: 0px -22px 0px 1px rgba(248, 210, 78, 0.7);
+  border-radius: 250px;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    width: 330px;
+    height: 330px;
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    -webkit-box-shadow: 0px -22px 0px 1px rgba(248, 210, 78, 0.7);
-    -moz-box-shadow: 0px -22px 0px 1px rgba(248, 210, 78, 0.7);
+    -webkit-box-shadow: 0px -26px 0px 1px rgba(248, 210, 78, 0.7);
+    -moz-box-shadow: 0px -26px 0px 1px rgba(248, 210, 78, 0.7);
     border-radius: 250px;
+  }
 
-    @media screen and (min-width: $tablet) {
-        flex-direction: row;
-        width: 330px;
-        height: 330px;
-        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-        -webkit-box-shadow: 0px -26px 0px 1px rgba(248, 210, 78, 0.7);
-        -moz-box-shadow: 0px -26px 0px 1px rgba(248, 210, 78, 0.7);
-        border-radius: 250px;
-    }
-
-    @media screen and (min-width: $tablet) {
-        margin-left: 17px;
-        width: 490px;
-        height: 490px;
-        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-        -webkit-box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
-        -moz-box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
-        border-radius: 250px;
-    }
-
+  @media screen and (min-width: $tablet) {
+    margin-left: 17px;
+    width: 490px;
+    height: 490px;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    -webkit-box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
+    -moz-box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
+    border-radius: 250px;
+  }
 }
 
 .about_text {
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    width: 220px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  width: 220px;
 
-    font-family: $primary-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 194%;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 194%;
 
-    letter-spacing: 0.04em;
-    text-align: center;
+  letter-spacing: 0.04em;
+  text-align: center;
 
-    color: #FCFCFC;
+  color: #fcfcfc;
 
-    @media screen and (min-width: $tablet) {
-        width: 334px;
-        margin-top: 0;
-        margin-left: 38px;
-        margin-bottom: 44px;
-        text-align: start;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 334px;
+    margin-top: 0;
+    margin-left: 38px;
+    margin-bottom: 44px;
+    text-align: start;
+  }
 
-    @media screen and (min-width: $desktop) {
-        width: 463px;
-        margin-top: 50px;
-        margin-left: 110px;
-        margin-bottom: 55px;
-    }
+  @media screen and (min-width: $desktop) {
+    width: 463px;
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-bottom: 55px;
+  }
 }
 
 .about_text_first {
-    margin: 0;
-    margin-bottom: 8px;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .about_text_second {
-    margin: 0;
-    margin-bottom: 8px;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .about_text_thirt {
-    margin: 0;
-    margin-bottom: 55px;
+  margin: 0;
+  margin-bottom: 55px;
 }
 
 .about_button {
-    width: 164px;
-    height: 42px;
-    background: $accent-color;
-    border-radius: 10px;
-    border: 0;
-    font-family: $primary-font;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.28;
+  width: 164px;
+  height: 42px;
+  background: $accent-color;
+  border-radius: 10px;
+  border: 0;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  cursor: url('../images/cursor.svg'), auto;
 
+  color: #000000;
 
-    color: #000000;
-
-    &:hover {
-        background: #0A8817;
-    }
-&:focus {
-        background: #0A8817;
-        color: #FCFCFC;
-    }
+  &:hover {
+    background: #0a8817;
+  }
+  &:focus {
+    background: #0a8817;
+    color: #fcfcfc;
+  }
 }
 
 .about_button_symbol {
-    width: 11px;
-    height: 9px;
-    margin-left: 5px;
-    fill: #000000;
+  width: 11px;
+  height: 9px;
+  margin-left: 5px;
+  fill: #000000;
 
-    .about_button:focus & {
-        fill: #FCFCFC;
-    }
+  .about_button:focus & {
+    fill: #fcfcfc;
+  }
 }
 
 .about_modal {
-    width: 280px;
-    background: #FCFCFC;
-    border: 2px solid $btn-default-color;
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 280px;
+  background: #fcfcfc;
+  border: 2px solid $btn-default-color;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    @media screen and (min-width: $tablet) {
-        width: 568px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 568px;
+  }
 }
 
 .about_modal_title {
-    margin: 0 auto;
-    margin-top: 28px;
-    font-family: $secondary-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+  margin: 0 auto;
+  margin-top: 28px;
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
-    color: #131313;
+  color: #131313;
 
-    @media screen and (min-width: $tablet) {
-        margin-top: 32px;
-        font-size: 20px;
-        line-height: 1.4;
-    }
+  @media screen and (min-width: $tablet) {
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 
 .about_modal_video {
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 224px;
-    height: 199px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 224px;
+  height: 199px;
 
-
-    @media screen and (min-width: $tablet) {
-        margin-top: 32px;
-        width: 448px;
-        height: 205px;
-        display: flex;
-    }
+  @media screen and (min-width: $tablet) {
+    margin-top: 32px;
+    width: 448px;
+    height: 205px;
+    display: flex;
+  }
 }
 
 .about_modal_text {
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 28px;
-    width: 224px;
-    font-family: $primary-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 28px;
+  width: 224px;
+  font-family: $primary-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
 
-    color: #131313;
+  color: #131313;
 
-    @media screen and (min-width: $tablet) {
-        margin-top: 32px;
-        margin-bottom: 32px;
-        width: 448px;
-    }
+  @media screen and (min-width: $tablet) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 448px;
+  }
 }

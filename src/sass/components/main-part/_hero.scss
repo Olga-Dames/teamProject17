@@ -106,7 +106,7 @@
 
   @media screen and (min-width: 320px) {
     margin-top: 32px;
-      margin-left: 20px;
+    margin-left: 20px;
   }
   @include tablet {
     margin-top: 24px;
@@ -134,6 +134,7 @@
     &:hover {
       border-color: $btn-hover-bg;
       color: $button-text-color;
+      cursor: url('../images/cursor.svg'), auto;
     }
   }
   @include tablet {
@@ -174,7 +175,7 @@
   border-radius: 10px;
   border: solid transparent;
   background-color: transparent;
-
+  cursor: url('../images/cursor.svg'), auto;
   align-items: center;
   color: $accent-color;
   text-decoration: underline;
@@ -229,7 +230,7 @@
 }
 
 .hero__picture {
-   @include tablet {
+  @include tablet {
     display: flex;
     align-items: center;
     gap: 32px;

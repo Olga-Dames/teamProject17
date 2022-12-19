@@ -28,7 +28,7 @@
 .header_nav-link {
   font-weight: 700;
   font-size: 16px;
-
+  cursor: url('../images/cursor.svg'), auto;
   color: #fcfcfc;
   color: $secondary-font-color;
 }
@@ -61,10 +61,12 @@
   }
   &:hover {
     background-color: $btn-hover-bg;
+    cursor: url('../images/cursor.svg'), auto;
   }
   &:focus {
     background-color: $btn-hover-bg;
     color: $button-light-color;
+    cursor: url('../images/cursor.svg'), auto;
   }
   &:disabled {
     background-color: $btn-disabled-color;
@@ -87,5 +89,5 @@
 }
 
 .logo {
-    width: 60px;
+  width: 60px;
 }

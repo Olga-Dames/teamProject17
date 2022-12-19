@@ -262,7 +262,7 @@
 
   background-color: transparent;
   border: none;
-  cursor: pointer;
+  cursor: url('../images/cursor.svg'), auto;
 
   @include tablet {
     bottom: 12px;

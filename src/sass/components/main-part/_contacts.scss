@@ -138,6 +138,8 @@
   letter-spacing: 0.04em;
   background-color: transparent;
   color: #d6936d;
+  cursor: url('../images/cursor.svg'), auto;
+
   @include tablet {
     margin-bottom: 32px;
     font-size: 14px;
@@ -249,7 +251,7 @@
   margin-bottom: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
-
+  cursor: url('../images/cursor.svg'), auto;
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18px / 14px);
@@ -282,7 +284,7 @@
   width: 196px;
   padding-top: 12px;
   padding-bottom: 12px;
-
+  cursor: url('../images/cursor.svg'), auto;
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18px / 14px);
