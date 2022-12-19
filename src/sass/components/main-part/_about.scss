@@ -1,20 +1,73 @@
-.section_about {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.section__about {
     background: $solid-bg-color;
-    max-width: 480px;
-    margin: 0 auto;
+    padding-bottom: 50px;
 
-    @media screen and (min-width: 768px) {
-        max-width: 768px
-    }
-
-    @media screen and (min-width: 1200px) {
-        max-width: 1200px;
+    @include tablet {
+        padding-bottom: 60px;
     }
 }
 
-.about_title_second {
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility: visible;
+    transition: 450ms;
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.about_modal_close-but {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    @include tablet {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.about_modal_close-icon {
+    width: 11px;
+    height: 11px;
+
+    @include tablet {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.about_modal_close-but {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    @include tablet {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.about__title-second {
     width: 210px;
     margin: 0 auto;
     margin-bottom: 12px;
@@ -22,130 +75,170 @@
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.22;
+    line-height: 1.23;
 
     text-align: center;
     text-transform: uppercase;
 
     color: #fcfcfc;
 
-
-    @media screen and (min-width: 768px) {
-        width: auto;
+    @include tablet {
+        width: 100%;
+        font-weight: 800;
+        font-size: 22px;
+        letter-spacing: 0.04em;
     }
 
+    @include desktop {
+        font-size: 30px;
+    }
 }
 
-.about_title_main {
+.about__title-main {
     width: 200px;
     margin: 0 auto;
-    margin-bottom: 120px;
+    margin-bottom: 32px;
     font-family: $secondary-font;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 1.25;
+    font-size: 30px;
+    line-height: 1.27;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
+    color: #fcfcfc;
 
-    color: #FCFCFC;
+    @include tablet {
+        width: 100%;
+        margin-bottom: 72px;
+        font-size: 34px;
+        line-height: 1.26;
+        letter-spacing: 0.06em;
+    }
 
-    @media screen and (min-width: 768px) {
-        width: auto;
+    @include desktop {
+        margin-bottom: 82px;
+        font-size: 36px;
+        line-height: 1.25;
     }
 }
 
-.about_content {
-    position: relative;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-
-    @media screen and (min-width: 768px) {
+.about__content {
+    @include tablet {
+        display: flex;
         flex-direction: row;
+        gap: 38px;
     }
 
+    @include desktop {
+        gap: 110px;
+    }
 }
 
-.about_img {
-    margin: 0 auto;
-    width: 279px;
-    height: 279px;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
-    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    -webkit-box-shadow: 0px -22px 0px 1px rgba(248, 210, 78, 0.7);
-    -moz-box-shadow: 0px -22px 0px 1px rgba(248, 210, 78, 0.7);
-    border-radius: 250px;
+.about__thumb {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto 62px auto;
+    background: linear-gradient(0deg,
+            rgba(248, 210, 78, 0.7),
+            rgba(248, 210, 78, 0.7)),
+        #d9d9d9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    border-radius: 50%;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
+        width: 330px;
+        height: 330px;
+        margin-bottom: 32px;
+    }
+
+    @include desktop {
+        width: 490px;
+        height: 490px;
+    }
+}
+
+.about__img {
+    position: absolute;
+    top: 22px;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+
+    @include tablet {
         flex-direction: row;
         width: 330px;
         height: 330px;
-        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-        -webkit-box-shadow: 0px -26px 0px 1px rgba(248, 210, 78, 0.7);
-        -moz-box-shadow: 0px -26px 0px 1px rgba(248, 210, 78, 0.7);
-        border-radius: 250px;
     }
 
-    @media screen and (min-width: 1200px) {
-        margin-left: 17px;
+    @include desktop {
         width: 490px;
         height: 490px;
-        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-        -webkit-box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
-        -moz-box-shadow: 0px -39px 0px 1px rgba(248, 210, 78, 0.7);
-        border-radius: 250px;
     }
-
 }
 
-.about_text {
+.about__text {
     margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 10px;
     width: 220px;
-
-    font-family: $primary-font;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 194%;
-
-    letter-spacing: 0.04em;
+    font-size: 12px;
+    line-height: 1.76;
     text-align: center;
 
-    color: #FCFCFC;
+    color: #fcfcfc;
 
-    @media screen and (min-width: 768px) {
-        width: 334px;
-        margin-top: 0;
-        margin-left: 38px;
-        margin-bottom: 44px;
-        text-align: start;
+    @include tablet {
+        width: 320px;
+        text-align: left;
+        letter-spacing: 0.04em;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         width: 463px;
-        margin-top: 50px;
-        margin-left: 110px;
-        margin-bottom: 55px;
     }
 }
 
-.about_text_first {
-    margin: 0;
+.about__text-first {
     margin-bottom: 8px;
+    letter-spacing: 0.04em;
+
+    @include desktop {
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+    }
 }
 
-.about_text_second {
-    margin: 0;
-    margin-bottom: 8px;
+.about__text-second {
+    margin-bottom: 10px;
+    line-height: 1.62;
+
+    @include tablet {
+        margin-bottom: 8px;
+    }
+
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.94;
+    }
 }
 
-.about_text_thirt {
-    margin: 0;
-    margin-bottom: 55px;
+.about__text-thirt {
+    display: none;
+
+    @include tablet {
+        display: block;
+        margin-bottom: 32px;
+        line-height: 1.94;
+    }
+
+    @include desktop {
+        margin-bottom: 54px;
+        font-size: 14px;
+        line-height: 1.94;
+    }
 }
 
 .about_button {
@@ -160,16 +253,15 @@
     font-size: 14px;
     line-height: 1.28;
 
-
     color: #000000;
 
     &:hover {
-        background: #0A8817;
+        background: #0a8817;
     }
 
     &:focus {
-        background: #0A8817;
-        color: #FCFCFC;
+        background: #0a8817;
+        color: #fcfcfc;
     }
 }
 
@@ -180,6 +272,78 @@
     fill: #000000;
 
     .about_button:focus & {
-        fill: #FCFCFC;
+        fill: #fcfcfc;
+    }
+}
+
+.about_modal {
+    width: 280px;
+    background: #fcfcfc;
+    border: 2px solid $btn-default-color;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (min-width: $tablet) {
+        width: 568px;
+    }
+}
+
+.about_modal_title {
+    margin: 0 auto;
+    margin-top: 28px;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #131313;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 32px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+.about_modal_video {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 224px;
+    height: 199px;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 32px;
+        width: 448px;
+        height: 205px;
+        display: flex;
+    }
+}
+
+.about_modal_text {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 28px;
+    width: 224px;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+
+    color: #131313;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        width: 448px;
     }
 }
