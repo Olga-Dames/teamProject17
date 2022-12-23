@@ -28,8 +28,10 @@
 
   /*  Установаем ширину окна  */
   width: 280px;
+  height: 780px;
   @include tablet {
     width: 568px;
+    height: 554px;
   }
 
   /*  Центрируем и задаем z-index */
